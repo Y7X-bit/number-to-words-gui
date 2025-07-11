@@ -1,22 +1,31 @@
-# 🔢 Number to Words Converter (GUI)
+<h1 align="center">🔢 Number to Words Converter</h1>
 
-Convert any number into English words using a beautiful AMOLED-themed GUI with glowing red buttons and your favorite ✨ RedX Touch + Glow aesthetic.
+<p align="center">
+  <img src="assets/1.png" alt="Preview" width="700"/>
+</p>
 
-## 🚀 Features
-- AMOLED True Black UI
-- Red glowing buttons
-- Smooth + modern layout
-- “Powered by Y7X 💗” footer branding
+<p align="center">
+  <b>Turn numbers into words, the aesthetic way. Powered by Python. Styled by Y7X.</b><br>
+  <code>AMOLED GUI • Red Outline • White Text • CustomTkinter</code>
+</p>
 
-## 📦 Requirements
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
+---
 
-## ▶️ Run
-\`\`\`bash
-python main_script.py
-\`\`\`
+## ✨ Features
 
-## 💖 Designed By
-**@Y7X-bit** ✨
+- 🖤 **True AMOLED** pitch black interface
+- 🔴 **Red outlined inputs & buttons**
+- ⌨️ Clean entry box with white text
+- 🧠 Instant number-to-words conversion
+- ❌ Reset with a single tap
+- 💗 Footer branding: <b>"🔎 Powered by Y7X 💗"</b>
+- 📱 Fully resizable and elegant layout
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone this repo:
+```bash
+git clone https://github.com/Y7X-bit/number-to-words
+cd number-to-words

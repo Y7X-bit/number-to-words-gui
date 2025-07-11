@@ -57,29 +57,52 @@ ctk.set_default_color_theme("dark-blue")
 
 app = ctk.CTk()
 app.title("🔢 Number to Words Converter")
-app.geometry("460x300")
+app.geometry("600x410")
+app.configure(fg_color="#000000")
 app.resizable(False, False)
 
-title = ctk.CTkLabel(app, text="Number to Words", font=("Segoe UI", 24, "bold"), text_color="white")
-title.pack(pady=(20, 10))
+# Title
+title = ctk.CTkLabel(app, text="Number ➤ Words", font=("Segoe UI", 28, "bold"),
+                     text_color="#FF0000", bg_color="#000000")
+title.pack(pady=(30, 10))
 
-entry = ctk.CTkEntry(app, placeholder_text="Enter a number", font=("Segoe UI", 16), width=300)
-entry.pack(pady=(10, 5))
+# Entry
+entry = ctk.CTkEntry(app, placeholder_text="Enter a number", font=("Segoe UI", 18),
+                     width=400, height=45, fg_color="#000000", text_color="white",
+                     border_color="#FF0000", border_width=2, corner_radius=10,
+                     bg_color="#000000")
+entry.pack(pady=(10, 20))
 
-output_label = ctk.CTkTextbox(app, width=360, height=80, font=("Segoe UI", 15), wrap="word")
-output_label.pack(pady=(10, 10))
+# Output Text Box
+output_label = ctk.CTkTextbox(app, width=480, height=100, font=("Segoe UI", 16),
+                              wrap="word", fg_color="#000000", text_color="white",
+                              border_color="#FF0000", border_width=2, corner_radius=10,
+                              bg_color="#000000")
+output_label.pack(pady=(0, 20))
 output_label.configure(state="disabled")
 
-btn_frame = ctk.CTkFrame(app, fg_color="transparent")
-btn_frame.pack(pady=5)
+# Buttons Frame
+btn_frame = ctk.CTkFrame(app, fg_color="#000000", bg_color="#000000")
+btn_frame.pack(pady=10)
 
-convert_btn = ctk.CTkButton(btn_frame, text="🔁 Convert", command=convert_number, fg_color="#FF0033", hover_color="#FF3366", corner_radius=10)
-convert_btn.pack(side="left", padx=10)
+# Convert Button (transparent + red border)
+convert_btn = ctk.CTkButton(btn_frame, text="🔁 Convert", command=convert_number,
+                             width=180, height=40, fg_color="#000000", text_color="white",
+                             hover_color="#1a1a1a", border_color="#FF0000", border_width=2,
+                             corner_radius=12, font=("Segoe UI", 16, "bold"),
+                             bg_color="#000000")
+convert_btn.grid(row=0, column=0, padx=15)
 
-clear_btn = ctk.CTkButton(btn_frame, text="❌ Clear", command=clear_all, fg_color="#333333", hover_color="#555555", corner_radius=10)
-clear_btn.pack(side="left", padx=10)
+# Clear Button (same red border + black fill)
+clear_btn = ctk.CTkButton(btn_frame, text="❌ Clear", command=clear_all,
+                           width=180, height=40, fg_color="#000000", text_color="white",
+                           hover_color="#1a1a1a", border_color="#FF0000", border_width=2,
+                           corner_radius=12, font=("Segoe UI", 16), bg_color="#000000")
+clear_btn.grid(row=0, column=1, padx=15)
 
-footer = ctk.CTkLabel(app, text="🔎 Powered by Y7X 💗", text_color="#888", font=("Segoe UI", 12))
-footer.pack(pady=(10, 0))
+# Footer
+footer = ctk.CTkLabel(app, text="🔎 Powered by Y7X 💗", text_color="#FF0000",
+                      font=("Segoe UI", 13), bg_color="#000000")
+footer.pack(pady=(20, 10))
 
 app.mainloop()
