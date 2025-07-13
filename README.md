@@ -7,7 +7,7 @@ Turn numbers into words, the aesthetic way. Powered by Python. Styled by Y7X.
 AMOLED GUI • Red Outline • White Text • CustomTkinter
 Branded with 💗 by [Y7X-bit](https://github.com/Y7X-bit)
 
-<img src="assets/1.png" width="600"/>
+<img src="assets/a.png" width="600"/>
 
 </div>
 
