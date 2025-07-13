@@ -1,17 +1,19 @@
-<h1 align="center">🔢 Number to Words Converter</h1>
+<div align="center">
 
-<p align="center">
-  <img src="assets/1.png" alt="Preview" width="700"/>
-</p>
+# 🎯 Countella
+**✍️ Words now glow. Numbers bow down.**
 
-<p align="center">
-  <b>Turn numbers into words, the aesthetic way. Powered by Python. Styled by Y7X.</b><br>
-  <code>AMOLED GUI • Red Outline • White Text • CustomTkinter</code>
-</p>
+Turn numbers into words, the aesthetic way. Powered by Python. Styled by Y7X.
+AMOLED GUI • Red Outline • White Text • CustomTkinter
+Branded with 💗 by [Y7X-bit](https://github.com/Y7X-bit)
+
+<img src="assets/1.png" width="600"/>
+
+</div>
 
 ---
 
-## ✨ Features
+## 🌟 Features at a Glance
 
 - 🖤 **True AMOLED** pitch black interface
 - 🔴 **Red outlined inputs & buttons**
@@ -23,9 +25,12 @@
 
 ---
 
-## 🚀 Getting Started
+## 🖥️ Installation
 
-### 1. Clone this repo:
+> Python 3.9 or later required
+
 ```bash
-git clone https://github.com/Y7X-bit/number-to-words
-cd number-to-words
+git clone https://github.com/Y7X-bit/Countella.git
+cd Countella
+pip install -r requirements.txt
+python Countella.py

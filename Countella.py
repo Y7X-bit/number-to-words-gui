@@ -56,13 +56,13 @@ ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
 
 app = ctk.CTk()
-app.title("🔢 Number to Words Converter")
+app.title("💬 Countella")
 app.geometry("600x410")
 app.configure(fg_color="#000000")
 app.resizable(False, False)
 
 # Title
-title = ctk.CTkLabel(app, text="Number ➤ Words", font=("Segoe UI", 28, "bold"),
+title = ctk.CTkLabel(app, text="💬 Countella", font=("Segoe UI", 28, "bold"),
                      text_color="#FF0000", bg_color="#000000")
 title.pack(pady=(30, 10))
 
@@ -85,7 +85,7 @@ output_label.configure(state="disabled")
 btn_frame = ctk.CTkFrame(app, fg_color="#000000", bg_color="#000000")
 btn_frame.pack(pady=10)
 
-# Convert Button (transparent + red border)
+# Convert Button
 convert_btn = ctk.CTkButton(btn_frame, text="🔁 Convert", command=convert_number,
                              width=180, height=40, fg_color="#000000", text_color="white",
                              hover_color="#1a1a1a", border_color="#FF0000", border_width=2,
@@ -93,7 +93,7 @@ convert_btn = ctk.CTkButton(btn_frame, text="🔁 Convert", command=convert_numb
                              bg_color="#000000")
 convert_btn.grid(row=0, column=0, padx=15)
 
-# Clear Button (same red border + black fill)
+# Clear Button
 clear_btn = ctk.CTkButton(btn_frame, text="❌ Clear", command=clear_all,
                            width=180, height=40, fg_color="#000000", text_color="white",
                            hover_color="#1a1a1a", border_color="#FF0000", border_width=2,
